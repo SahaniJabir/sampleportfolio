@@ -1,0 +1,41 @@
+#navbar{
+    background-color: $black;
+    position: fixed;    
+    width: 100%;    
+    top: 0;
+    left: 0;
+    z-index: 1;
+     
+
+    .nav-menu{
+        display: flex;
+        justify-content: flex-end;
+
+        
+        :last-child{
+            margin-right: 30px;
+
+            @include breakpoint-down(small){
+                margin-right: 10px;
+
+                
+            }
+        }
+        
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        margin: 5px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}

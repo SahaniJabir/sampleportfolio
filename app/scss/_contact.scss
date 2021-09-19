@@ -1,0 +1,68 @@
+#contact{
+    background-color: $darkred;
+    color: $grey;
+    h2{
+        text-align: center;
+    }
+    #description{
+        text-align: center;
+        font-size: 16px;
+        
+    }
+    #contact-form{
+        
+        width:50%;
+        margin:auto;
+        
+        
+      }
+    .input-group{
+        display: flex;
+    }
+    .input-control{
+        width:70%;
+        
+        height: 2.375rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        padding: 0.925rem;
+      }
+    .input-textarea {
+        height: 5.375rem;
+        width: 70%;
+        padding: 0.325rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        
+          
+      }
+    label{
+        
+        padding-left:0.75rem;
+        padding-top:0.75rem;
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        width: 80px;
+        margin-right: 1rem;
+        
+    }
+    .submit-button {
+    
+        padding: 0.75rem;
+        background: grey;
+        margin-left:0.75rem;
+        margin-top:0.75rem;
+        border: none;
+        cursor: pointer;        
+        background-color: #37af65;
+        color: white;
+        width: 90%;
+        margin-bottom:0.75rem;
+        border-radius: 0.25rem;
+        
+    }
+  
+
+    border-top: 0.2rem solid;
+}

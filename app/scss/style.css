@@ -1,0 +1,276 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #D3D3D3;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#navbar .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#navbar .nav-menu :last-child {
+  margin-right: 30px;
+}
+
+@media (max-width: 39.9375em) {
+  #navbar .nav-menu :last-child {
+    margin-right: 10px;
+  }
+}
+
+#navbar li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.main {
+  padding-top: 60px;
+}
+
+#welcome-section {
+  background-color: #8B0000;
+  color: #D3D3D3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section h2 {
+  padding: 10px;
+  margin: 0;
+}
+
+#welcome-section p {
+  padding: 2px 50px;
+  font-size: 18px;
+}
+
+#welcome-section img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+@media (max-width: 39.9375em) {
+  #welcome-section img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+#welcome-section #scroll {
+  text-align: center;
+}
+
+#welcome-section #scroll #description {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+#welcome-section #scroll a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 8px;
+}
+
+#welcome-section #scroll .profile-icon {
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+#welcome-section #scroll .profile-icon :hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#projects {
+  width: 100%;
+  background-color: #000000;
+  color: #D3D3D3;
+  border-top: 0.2rem solid;
+}
+
+#projects #work {
+  border-top: 0.2rem solid;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+#projects .project-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5rem 4rem;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  max-width: 1280px;
+  padding: 5px 50px;
+}
+
+#projects .project-title {
+  color: white;
+  padding: 1rem 0.5rem;
+}
+
+#projects .project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#projects a {
+  text-decoration: none;
+  text-align: center;
+}
+
+#projects #skills {
+  text-align: center;
+}
+
+#projects #skills h2 {
+  display: inline-block;
+}
+
+#projects #skills #skills-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
+#contact {
+  background-color: #8B0000;
+  color: #D3D3D3;
+  border-top: 0.2rem solid;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact #description {
+  text-align: center;
+  font-size: 16px;
+}
+
+#contact #contact-form {
+  width: 50%;
+  margin: auto;
+}
+
+#contact .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .input-control {
+  width: 70%;
+  height: 2.375rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.925rem;
+}
+
+#contact .input-textarea {
+  height: 5.375rem;
+  width: 70%;
+  padding: 0.325rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+#contact label {
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  width: 80px;
+  margin-right: 1rem;
+}
+
+#contact .submit-button {
+  padding: 0.75rem;
+  background: grey;
+  margin-left: 0.75rem;
+  margin-top: 0.75rem;
+  border: none;
+  cursor: pointer;
+  background-color: #37af65;
+  color: white;
+  width: 90%;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+/*# sourceMappingURL=style.css.map */

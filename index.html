@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/app/scss/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Portfolio Sample</title>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            
+            <div class="nav-menu">
+                <ul>
+                    <li> <a href="#welcome-section">About</a></li>
+                    <li> <a href="#projects">Work</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <div class="main">
+
+            <div id="welcome-section">                
+                <img src="/images/AvatarMaker.png"> 
+                <h2 id="welcome-header">I'm Sahani, Web developer.</h2>              
+                <p>I am a highly motivated and experienced Software Engineer with demonstrated history of developing web applications and websites. </p>
+                <div id="scroll">
+                    <span id="description">Learn more about what I do<br> </span>
+                                       
+                        <div class="profile-icon">
+                            
+                            <a href="https://www.linkedin.com/in/jabirsahani/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="https://github.com/SahaniJabir" target="_blank"><i class="fa fa-github-square"></i></a>
+                            <a href="https://codepen.io/sahanijabir" target="_blank"><i class="fa fa-codepen"></i></a>
+                        </div>
+                        <a id ="arrow-circle" href="#projects">
+                            <i class="fa fa-arrow-circle-down" id="scroll-down"></i>
+                        </a>
+                    </div>
+                
+            </div>
+
+            <div id="projects">
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <p>Industry experience as a fullstack developer. Specialized in Python and PHP</p>
+                    <div id="skills-grid">
+                        <img src="/images/icons8-css3-96.png">
+                        <img src="/images/icons8-html-5-96.png">
+                        <img src="/images/icons8-javascript-96.png">
+                        <img src="/images/icons8-react-native-96.png">
+                        <img src="/images/icons8-php-logo-80.png">
+                        <img src="/images/icons8-python-96.png">
+                    </div>
+                </div>
+                
+                <div id="work">
+
+                    <h2>Here are some of my works</h2>
+                    <section class="project-grid"> 
+                        
+                        <a class="" href="https://codepen.io/sahanijabir/full/pobVJJa" target="_blank">
+            
+                            <img class="project-image" alt="project" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                            <h3 class="project-title" >Tribute Page</h3>
+                        </a>
+                        
+                          <a class="" href="https://codepen.io/sahanijabir/full/pobVJJa" target="_blank">
+            
+                            <img class="project-image" alt="project" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                            <h3 class="project-title" >Tribute Page</h3>
+                          </a>
+                          <a class="" href="https://codepen.io/sahanijabir/full/pobVJJa" target="_blank">
+            
+                            <img class="project-image" alt="project" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                            <h3 class="project-title" >Tribute Page</h3>
+                          </a>
+                          <a class="" href="https://codepen.io/sahanijabir/full/pobVJJa" target="_blank">
+            
+                            <img class="project-image" alt="project" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                            <h3 class="project-title" >Tribute Page</h3>
+                          </a>
+                          
+
+                    </section>
+
+                </div>
+
+            </div>
+            <div id="contact">
+                <h2>Say Hello...</h2>
+                <p id="description"> Contact me to request any service I offer</p>
+                <form id="contact-form">
+                    
+                    <div class="input-group">
+                        <label id="name-label" for="name">Name: </label>
+                        <input type="text" class="input-control" name="name"
+                        id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                     <label id="email-label" for="email">Email: </label>
+                     <input type="email" name="email" class="input-control" 
+                        id="email" placeholder="Enter your Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label id="subject-label" for="subject">Subject:  </label>
+                        <input type="text" class="input-control" name="subject"
+                            id="subject" placeholder="Subject" >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Message: </label>
+                        <textarea id="comments" class="input-control input-textarea" 
+                        name="comment" placeholder="Enter your message here..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" id="submit" 
+                        class="submit-button">Send</button>
+                    </div>
+                
+                </form>
+
+
+            </div>
+        </div>
+        <footer id="footer">
+            &copy; Sahani Jabir 2021
+        </footer>
+
+
+        <script src="/app/js/script.js"></script>
+    </body>
+</html>
